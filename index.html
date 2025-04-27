@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍳 Recipe Finder</h1>
+    <div class="search-box">
+      <input type="text" id="ingredientInput" placeholder="Enter an ingredient...">
+      <button onclick="searchRecipes()">Search</button>
+    </div>
+    <div id="recipes" class="recipes-grid"></div>
+    
+    <!-- Modal for recipe details -->
+    <div id="recipeModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button id="backButton" onclick="closeModal()">🔙 Back to Search</button>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="" />
+        <div id="modalInstructions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
