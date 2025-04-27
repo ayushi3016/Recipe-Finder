@@ -3,6 +3,7 @@ Recipe Finder is a user-friendly web application that helps users discover recip
 
 
 TECH STACK:
+
 Frontend: HTML5, CSS3, JavaScript (ES6)
 
 API Integration: TheMealDB API
